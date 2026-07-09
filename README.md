@@ -23,8 +23,10 @@ project/
 ## Suggested read order
 1. **Business_Requirements_Document.docx** — the "why": business problem, stakeholders, 8 key questions the analysis answers.
 2. **Data_Dictionary.xlsx** — the "what": every column explained, plus an Assumptions Log documenting how ambiguous fields were interpreted.
-3. **EDA_Data_Cleaning.ipynb** — the "how": data quality issues found, cleaning steps with rationale, and EDA answering each business question with charts.
-4. **PowerBI_Build_Guide.docx** — build the dashboard: star schema, DAX measures, and a 5-page layout (Portfolio Overview, Risk Drivers, Originator Scorecard, Delinquency & Early Warning, Loan Detail).
+3. **EDA_Data_Cleaning.ipynb** — the "how": data quality issues found, cleaning steps with rationale, and EDA answering each business question with charts and some featuring engineering.
+4. **Loan risk assessment dashboard: Complete visualisation.
+5. **EMI_Portfolio_Analysis_Report: Details report of the analysis.
+
 
 ## Key findings (see notebook for full detail)
 - Default risk rises sharply as credit score drops and DTI/LTV increase — classic credit-risk behavior.
@@ -32,10 +34,14 @@ project/
 - A small subset of originators contribute a disproportionate share of defaults relative to their loan volume.
 - `candidate_id` was found to be an unreliable, non-unique key — a data quality issue documented rather than silently ignored.
 
-## How to build the Power BI dashboard
-1. Open Power BI Desktop → Get Data → `data/EMI_cleaned.csv`.
-2. Follow `PowerBI_Build_Guide.docx` for the star-schema dimension tables, DAX measures, and page layouts.
-3. Publish to Power BI Service or export as `.pbix` for your portfolio.
+## Dashboard preview:
+
+<img width="1312" height="700" alt="Screenshot 2026-07-09 065622" src="https://github.com/user-attachments/assets/3c921e91-9f48-49b9-8a83-577742341683" />
+<img width="1314" height="687" alt="Screenshot 2026-07-09 065655" src="https://github.com/user-attachments/assets/d82c5371-772e-4406-a5e2-ac1a91fedca1" />
+
+<img width="1324" height="707" alt="Screenshot 2026-07-09 065715" src="https://github.com/user-attachments/assets/f486a4ea-8545-46cd-8174-e3e4eb775c1a" />
+
+
 
 ## Tech stack
-Python (pandas, matplotlib, seaborn) for cleaning/EDA · Excel for documentation · Power BI for the dashboard.
+Python (pandas, matplotlib, seaborn) for cleaning/EDA · Word for documentation · Power BI for the dashboard.
