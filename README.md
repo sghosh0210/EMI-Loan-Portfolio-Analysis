@@ -1,4 +1,4 @@
-# EMI Loan Portfolio — Delinquency & Default Risk Analytics
+# EMI Loan Portfolio - Delinquency & Default Risk Analytics
 
 A finance-domain data analytics portfolio project built on a 116,058-row EMI (Equated Monthly Installment) loan dataset. It reverse-engineers a real-world business context from a raw, undocumented file, then delivers cleaning, EDA, and an interactive Power BI dashboard on top of it.
 
